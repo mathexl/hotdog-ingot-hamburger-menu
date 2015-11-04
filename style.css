@@ -1,0 +1,96 @@
+.patty_box{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  padding: 0px;
+  order: 1;
+  box-sizing: border-box;
+}
+
+
+.patty_bun{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10%;
+  top: 15%;
+  height: 10%;
+  background-color: white;
+  border-radius: 100px;
+  position: relative;
+}
+
+.patty_middle_bun{
+  background-color: transparent;
+}
+
+
+
+.patty_ingot{
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0px;
+  float:left;
+  margin-left: 0%;
+  margin-right: 0%;
+  -webkit-transition: height 1.5s ease-in-out;
+   -moz-transition: height 1.5s ease-in-out;
+   -o-transition: height 1.5s ease-in-out;
+   transition: height 1.5s ease-in-out;
+}
+
+
+.patty_five_active{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 15%;
+  height: 100%;
+  background-color: white;
+  border-radius: 100%;
+  float:left;
+}
+
+
+.patty_four_active{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 15%;
+  height: 100%;
+  background-color: white;
+  border-radius: 100%;
+  float:left;
+}
+
+
+.patty_item{
+  width: 200px;
+  background-color: black;
+  height: 20px;
+  color: white;
+  border-top:1px solid white;
+  order: 2;
+  display:none;
+}
+.patty_item:hover
+{
+  background-color:rgba(50,50,50,1);
+}
+.patty_parent{
+  display:flex; flex-direction: column; text-align:center;
+}
+#patty_1:hover ~ .patty_box > .patty_middle_bun > #patty_ingot_1 {
+  opacity:.5 !important;
+}
+#patty_2:hover ~ .patty_box > .patty_middle_bun > #patty_ingot_2 {
+  opacity:.5 !important;
+}
+#patty_3:hover ~ .patty_box > .patty_middle_bun > #patty_ingot_3 {
+  opacity:.5 !important;
+}
+#patty_4:hover ~ .patty_box > .patty_middle_bun > #patty_ingot_4 {
+  opacity:.5 !important;
+}
+#patty_5:hover ~ .patty_box > .patty_middle_bun > #patty_ingot_5 {
+  opacity:.5 !important;
+}

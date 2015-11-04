@@ -1,0 +1,49 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    $(function () {
+          $('#patty').click(function () {
+            $('.patty_item').slideToggle();
+            $( ".patty_five" ).toggleClass( 'patty_five_active', 500);
+            $( ".patty_four" ).toggleClass( 'patty_four_active', 500);
+
+            return false;
+        });
+    });
+</script>
+
+
+
+<div class="patty_parent">
+
+  <div id="patty_1" class="patty_item right"></div>
+  <div id="patty_2" class="patty_item right"></div>
+  <div id="patty_3" class="patty_item right"></div>
+  <div id="patty_4" class="patty_item right"></div>
+  <div id="patty_5" class="patty_item right"></div>
+  <div class="patty_box right" id="patty">
+      <div class="patty_bun">
+      </div>
+
+      <div class="patty_bun patty_middle_bun">
+          <div id="patty_ingot_1" class="patty_ingot patty_five"></div>
+          <div id="patty_ingot_2" class="patty_ingot patty_five"></div>
+          <div id="patty_ingot_3" class="patty_ingot patty_five"></div>
+          <div id="patty_ingot_4" class="patty_ingot patty_five"></div>
+          <div id="patty_ingot_5" class="patty_ingot patty_five"></div>
+
+      </div>
+
+      <div class="patty_bun">
+      </div>
+
+  </div>
+
+
+</div>
+</body>
